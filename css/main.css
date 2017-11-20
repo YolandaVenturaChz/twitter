@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+    }
+/* iniciando con la cabecera font-family: 'Lalezar', cursive;*/
+
+header{
+    width: 100%;
+    font-size: 14px;
+    
+
+}
+header .container {
+    display: flex;
+     height: 45px;
+     background-color: white;
+}
+
+header .container nav {
+    width: 80%;
+
+}
+
+header .container nav ul {
+    display: inline-flex;
+    list-style: none;
+    margin: 10px;
+    margin-left: 36px;
+
+}
+
+
+
+header .container .enamorando {
+    padding-top: 3px;
+
+}
+
+header .container nav ul li a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #66757f;
+    background-color: #ffff;
+}
+
+
+header .idiomas {
+    width: 28%;
+      
+}
+
+header .idiomas nav {
+     float: right;
+}
+
+/* comenzando con la primera section */
+body {
+    background-image: url('../assets/images/peru.jpg');
+    background-size: cover;
+    height: 662px;
+
+}
+
+container .part1 {
+    height: 460px;
+    clear: both;
+
+}
+.part1 article {
+    width: 52%;
+    float: left;
+    padding: 70px 8px 40px 213px;
+    height: 434px;
+    color: white;
+    margin-right: 68px;
+}
+.part1 article p {
+   color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.part1 article h2 {
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 28px;
+    font-weight: bold;
+}
+
+/* comenzamos dando estilo al div informativo*/
+container .informacion {
+    width: 301px;
+    margin-top: 71px;
+    display: inline-block;   
+    background-color: white;
+    margin-left: 22px;
+    margin-bottom: 14px;
+}
+
+container .informacion form {
+    width: 100%;
+    height: 118px;
+    display: inline-block;
+ }
+ /*Falta arreglar los botones-----------------------*/
+container .informacion form .enter {
+    width: 276px;
+    height: 28px;
+    margin: 14px 14px;
+    border-radius: 5px;
+
+}
+container .informacion form .enter1 {
+     width: 148px;
+     height: 28px;
+    margin-bottom: 4px;
+    margin-left: 14px;
+    border-radius: 5px;
+   
+} 
+
+container .informacion form button {
+    width: 119px;
+    height: 28px;
+    color: #22a1e0;
+    font-size: 13px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #22a1e0;
+}
+
+container .informacion form .enter2 {
+     width: 20px;
+    margin-bottom: 14px;
+    margin-left: 14px;
+    border-radius: 3px;
+} 
+
+/* fin de botones de la primera parte info*/
+
+ container .informacion form nav ul .text {
+    font-size: 12px;
+    color: #66757f;
+}
+ container .informacion form nav ul a {
+     font-size: 11px;
+    color: #22a1e0;
+ }
+
+/* empezamos con el segundo cuadro de info*/
+container .informacion1 {
+    width: 301px;
+    height: 229px;
+    float: left;
+    background: white;
+    margin-left: 22px;
+}
+
+container .informacion1 h3 {
+    font-size: 17px;
+    margin: 14px 0px 5px 0px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid gray;
+}
+container .informacion1 h3 strong {
+    
+    padding-left: 14px;
+    font-weight: bold;
+    color: black;
+}
+container .informacion1 h3 p {
+    color: gray;
+    margin-left: 14px;
+    
+}
+/*Con input de nombre ,correo, etc* y botton*/
+container .informacion1 .enter3 {
+    width: 276px;
+    height: 28px;
+    margin: 5px 14px;
+    border-radius: 5px;
+}
+container .informacion1 .btn {
+    float: right;
+    width: 173px;
+    height: 36px;
+    margin-right: 14px;
+    border: 1px solid #22a1e0;
+    border-radius: 16px;
+    background: #22a1e0;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* comenzando con la part2 */
+
+ container .part2{
+    margin-bottom: 20px;
+    height: 110px;
+    width: 40%;
+    float: left;
+    padding: 0px 8px 70px 213px;
+    color: white;
+    margin-right: 68px;
+}
+/* iniciando footer */
+footer{
+    height: 60px;
+    clear: both;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li {
+    float: left;
+
+}
+footer nav ul li a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+}
+footer nav ul li span {
+    color : white;
+    font-size: 11px;
+}
+
+footer nav ul li span p {
+    position: absolute;
+    margin-left: -571px;
+    font-size: 16px;
+}
+
+
+
