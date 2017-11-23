@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Oxygen', sans-serif;
+    outline: none;
     }
 /* iniciando con la cabecera font-family: 'Lalezar', cursive;*/
 
@@ -26,14 +27,27 @@ header .container nav {
 header .container nav ul {
     display: inline-flex;
     list-style: none;
-    margin: 10px;
+    margin: 5px;
     margin-left: 36px;
 
 }
+header .container nav ul li :hover{
+    border-bottom: 5px solid #f9a91a;
+    color: black;
+    padding: 10px;
 
+}
 
-
-header .container .enamorando {
+header .container nav ul .tree1 {
+    border: none;
+    padding-top: 3px;
+    
+}
+header .container nav ul .tree1 :hover {
+    border: none;
+    padding: 0;
+}
+header .container .tree {
     padding-top: 3px;
 
 }
@@ -132,22 +146,26 @@ container .informacion form button {
     border: 2px solid #22a1e0;
 }
 
-container .informacion form .enter2 {
-     width: 20px;
-    margin-bottom: 14px;
-    margin-left: 14px;
-    border-radius: 3px;
-} 
+container .informacion form #enter2 {
+    margin-left: 15px;
+}
+
 
 /* fin de botones de la primera parte info*/
 
  container .informacion form nav ul .text {
     font-size: 12px;
     color: #66757f;
+
 }
- container .informacion form nav ul a {
-     font-size: 11px;
+container .informacion form nav ul a {
+    font-size: 12px;
+}
+ container .informacion form nav ul .and {
+     font-size: 16px;
     color: #22a1e0;
+    text-decoration: none;
+    font-weight: 700;
  }
 
 /* empezamos con el segundo cuadro de info*/
