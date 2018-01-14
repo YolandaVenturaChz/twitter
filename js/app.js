@@ -1,18 +1,19 @@
 window.addEventListener('load', function() {
-    /* creamos las variables que usaremos de html */
+    /*creamos las variables que usaremos de html */
     var container = document.getElementById("container"); // padre
     var textarea = document.getElementById("txt"); // contenido
     var buton = document.getElementById("save"); //evento
     var contador = document.getElementById("cont")
-        /* creando variables dentro de js */
+        /** creando variables dentro de js */
     var max = 140;
 
-    // creando funciones
+    //creando funciones
+
     buton.addEventListener("click", function(event) {
         event.preventDefault();
 
         if (textarea.value) {
-            // crear los elementos
+            //crear los elementos
             var texto = document.createElement("li");
             texto.textContent = 'A las ' + getHour() + ' : ' + textarea.value;
             container.insertBefore(texto, container.firstChild);
@@ -23,8 +24,8 @@ window.addEventListener('load', function() {
         }
     })
 
+    //dando dinamica a textarea 
 
-    // dando dinamica a textarea 
     textarea.addEventListener("keyup", function(event) {
         var letters = textarea.value.length;
         contador.textContent = max - letters;
@@ -43,8 +44,13 @@ window.addEventListener('load', function() {
             buton.disabled = false;
             contador.style.color = 'black';
         }
-    });
+    })
 
+    function getHour() {
+        var date = Date();
+        var hour = date.split(' ')[4].slice(0, 5);
+        return hour;
+    }
 
     var tx = document.getElementsByTagName('textarea');
     for (var i = 0; i < tx.length; i++) {
@@ -56,13 +62,5 @@ window.addEventListener('load', function() {
         this.style.height = 'auto';
         this.style.height = (this.scrollHeight) + 'px';
     }
-
-    // funcion para obtener la hora :
-    function getHour() {
-        var date = Date();
-        var hour = date.split(' ')[4].slice(0, 5);
-        return hour;
-    }
-
 
 });
